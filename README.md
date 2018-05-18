@@ -6,19 +6,19 @@ LDAP Python 3 Demonstration Program
 **Overview**
 
 The program demonstrates how to do a simple LDAP search
-of the University of Hawaii LDAP service. 
+of the University of Hawaii LDAP service.
 
 You must specify your Special DN and its password.
 The example run of the program used the 'filedrop' special DN,
 but the account values have been removed from the checked-in code.
 
-The use of the special DN will also require 
+The use of the special DN will also require
 the ability to pass through the UH firewall.
 
 **Technology**
 
 The program was developed on Apple Mac OS X 10.10.2,
-using python version 3.4.1, pip version 1.5.6, 
+using python version 3.4.1, pip version 1.5.6,
 and the python3-ldap package version 0.9.7.
 
 **Verify you have Python 3 installed**
@@ -39,30 +39,30 @@ and the python3-ldap package version 0.9.7.
     Downloading/unpacking pyasn1==0.1.7 (from python3-ldap)
         Downloading pyasn1-0.1.7.tar.gz (68kB): 68kB downloaded
         Running setup.py (path:.../pyasn1/setup.py) egg_info for package pyasn1
-    
+
     Installing collected packages: python3-ldap, pyasn1
         Running setup.py install for pyasn1
-    
+
     Successfully installed python3-ldap pyasn1
     Cleaning up...
-    
+
 
 **Running the Program**
 
-Run the program from the command line: 
+Run the program from the command line:
 
     $ ./ldaprunner duckart
     vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-    {'cn': ['Frank R Duckart'], 'uhUuid': ['17958670'], 'mail': ['duckart@hawaii.edu', 'frank.duckart@hawaii.edu'], 'uid': ['duckart']}
+    {'cn': ['Francis R Duckart'], 'uhUuid': ['12345678'], 'mail': ['duckart@hawaii.edu', 'francis.duckart@hawaii.edu'], 'uid': ['duckart']}
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can run the program with mutltiple UH usernames: </br>
 
     $ ./ldaprunner duckart duckart
     vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-    {'cn': ['Frank R Duckart'], 'uhUuid': ['17958670'], 'mail': ['duckart@hawaii.edu', 'frank.duckart@hawaii.edu'], 'uid': ['duckart']}
+    {'cn': ['Francis R Duckart'], 'uhUuid': ['12345678'], 'mail': ['duckart@hawaii.edu', 'francis.duckart@hawaii.edu'], 'uid': ['duckart']}
         ................................
-    {'cn': ['Frank R Duckart'], 'mail': ['duckart@hawaii.edu', 'frank.duckart@hawaii.edu'], 'uid': ['duckart'], 'uhUuid': ['17958670']}
+    {'cn': ['Francis R Duckart'], 'mail': ['duckart@hawaii.edu', 'francis.duckart@hawaii.edu'], 'uid': ['duckart'], 'uhUuid': ['12345678']}
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **For More Information**
